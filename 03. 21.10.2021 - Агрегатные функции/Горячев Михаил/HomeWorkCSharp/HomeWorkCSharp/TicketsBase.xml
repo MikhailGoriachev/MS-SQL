@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<ArrayOfRequestOnTicket xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RequestOnTicket>
+    <NumberRequest>1000000</NumberRequest>
+    <PointDest>Майами</PointDest>
+    <NumberFlight>SU 9863</NumberFlight>
+    <Name>Богданов Н. А.</Name>
+    <Date>2022-01-03T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000001</NumberRequest>
+    <PointDest>Дубай</PointDest>
+    <NumberFlight>SK 8368</NumberFlight>
+    <Name>Власов Т. М.</Name>
+    <Date>2022-07-01T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000002</NumberRequest>
+    <PointDest>Дубай</PointDest>
+    <NumberFlight>SU 2860</NumberFlight>
+    <Name>Прохоров Т. М.</Name>
+    <Date>2022-11-11T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000003</NumberRequest>
+    <PointDest>Майами</PointDest>
+    <NumberFlight>AM 8912</NumberFlight>
+    <Name>РыбаковТ. М.</Name>
+    <Date>2022-01-07T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000004</NumberRequest>
+    <PointDest>Нью-Йорк</PointDest>
+    <NumberFlight>SK 6180</NumberFlight>
+    <Name>Власов Н. М.</Name>
+    <Date>2022-11-25T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000005</NumberRequest>
+    <PointDest>Сингапур</PointDest>
+    <NumberFlight>SK 9694</NumberFlight>
+    <Name>Мазайло И. Г.</Name>
+    <Date>2022-06-04T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000006</NumberRequest>
+    <PointDest>Гонконг</PointDest>
+    <NumberFlight>AC 4959</NumberFlight>
+    <Name>Богданов Н. А.</Name>
+    <Date>2022-06-17T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000007</NumberRequest>
+    <PointDest>Шеньчжень</PointDest>
+    <NumberFlight>SK 1288</NumberFlight>
+    <Name>Богданов В. И.</Name>
+    <Date>2022-12-07T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000008</NumberRequest>
+    <PointDest>Гонконг</PointDest>
+    <NumberFlight>AC 1320</NumberFlight>
+    <Name>Алексеев Я. С.</Name>
+    <Date>2022-11-27T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000009</NumberRequest>
+    <PointDest>Гонконг</PointDest>
+    <NumberFlight>AC 6405</NumberFlight>
+    <Name>РыбаковН. М.</Name>
+    <Date>2022-02-13T00:00:00</Date>
+  </RequestOnTicket>
+  <RequestOnTicket>
+    <NumberRequest>1000010</NumberRequest>
+    <PointDest>Париж</PointDest>
+    <NumberFlight>AC 4384</NumberFlight>
+    <Name>Прохоров В. И.</Name>
+    <Date>2022-04-10T00:00:00</Date>
+  </RequestOnTicket>
+</ArrayOfRequestOnTicket>

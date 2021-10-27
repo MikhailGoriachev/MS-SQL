@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <FirstName>Марина</FirstName>
+    <LastName>Иванова</LastName>
+	<Age>29</Age>
+  </Person>
+  <Person>
+    <FirstName>Леонид</FirstName>
+    <LastName>Романов</LastName>
+    <Age>25</Age>
+  </Person>
+  <Person>
+    <FirstName>Ирина</FirstName>
+    <LastName>Серова</LastName>
+    <Age>23</Age>
+  </Person>
+  <Person>
+    <FirstName>Андрей</FirstName>
+    <LastName>Иванов</LastName>
+    <Age>24</Age>
+  </Person>
+  <Person>
+    <FirstName>Арсений</FirstName>
+    <LastName>Бацуца</LastName>
+    <Age>38</Age>
+  </Person>
+  <Person>
+    <FirstName>Кристина</FirstName>
+    <LastName>Вятчина</LastName>
+    <Age>28</Age>
+  </Person>
+</ArrayOfPerson>
