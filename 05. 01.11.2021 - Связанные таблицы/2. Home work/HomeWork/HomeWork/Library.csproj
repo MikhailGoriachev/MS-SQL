@@ -92,9 +92,9 @@
     </Content>
     <Content Include="Scripts\Library\CreateTablesLibrary.sql" />
     <Content Include="Scripts\Library\QueriesLibrary.sql" />
-    <Content Include="Scripts\NewFolder1\CreateTablesPolyclinic.sql" />
-    <Content Include="Scripts\NewFolder1\FillDataPolyclinic.sql" />
-    <Content Include="Scripts\NewFolder1\Query.sql" />
+    <Content Include="Scripts\Polyclinic\CreateTablesPolyclinic.sql" />
+    <Content Include="Scripts\Polyclinic\FillDataPolyclinic.sql" />
+    <Content Include="Scripts\Polyclinic\Query.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

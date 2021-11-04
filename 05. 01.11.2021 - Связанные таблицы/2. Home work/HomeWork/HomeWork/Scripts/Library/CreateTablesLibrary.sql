@@ -5,6 +5,13 @@ CREATE TABLE [dbo].[Authors] (
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+-- создание таблицы КАТЕГОРИИ
+CREATE TABLE [dbo].[Categories] (
+    [Id]       INT           IDENTITY (1, 1) NOT NULL,      -- Id
+    [Category] NVARCHAR (20) NOT NULL,                      -- название категории книги
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
 -- создание таблицы КНИГИ
 CREATE TABLE [dbo].[Books] (
     [Id]         INT            IDENTITY (1, 1) NOT NULL,       -- Id
@@ -22,9 +29,14 @@ CREATE TABLE [dbo].[Books] (
     CONSTRAINT [CK_Books_Amount] CHECK ([Amount]>=(0))
 );
 
--- создание таблицы КАТЕГОРИИ
-CREATE TABLE [dbo].[Categories] (
-    [Id]       INT           IDENTITY (1, 1) NOT NULL,      -- Id
-    [Category] NVARCHAR (20) NOT NULL,                      -- название категории книги
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
+---------------------------------------------------------------------------------------------------------
+-- удаление таблиц
+
+-- удаление таблицы АВТОРЫ
+-- drop table Authors;
+
+-- удаление таблицы КАТЕГОРИИ
+-- drop table Categories;
+
+-- удаление таблицы КНИГИ
+-- drop table Books;
