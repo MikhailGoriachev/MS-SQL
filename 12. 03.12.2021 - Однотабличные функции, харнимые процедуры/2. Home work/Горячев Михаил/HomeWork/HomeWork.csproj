@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>HomeWork</RootNamespace>
     <AssemblyName>HomeWork</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -65,6 +65,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CarRental.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\CarRental_log.ldf">
+      <DependentUpon>CarRental.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\VideoLibrary.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -72,17 +79,21 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>VideoLibrary.mdf</DependentUpon>
     </Content>
-    <Content Include="Scripts\CreateFunctions.sql" />
-    <Content Include="Scripts\CreateTables.sql" />
-    <Content Include="Scripts\CreateViews.sql" />
-    <Content Include="Scripts\FillTables.sql" />
-    <Content Include="Scripts\PracticalQueries.sql" />
-    <Content Include="Scripts\Queries.sql" />
+    <Content Include="Scripts\Task2\CreateFunctions.sql" />
+    <Content Include="Scripts\Task2\CreateTables.sql" />
+    <Content Include="Scripts\Task2\CreateViews.sql" />
+    <Content Include="Scripts\Task2\FillTables.sql" />
+    <Content Include="Scripts\Task1\Queries.sql" />
+    <Content Include="Scripts\Task2\Queries.sql" />
+    <Content Include="Scripts\Task3\CreateTables.sql" />
+    <Content Include="Scripts\Task3\CreateViews.sql" />
+    <Content Include="Scripts\Task3\FillTables.sql" />
+    <Content Include="Scripts\Task3\Queries.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
