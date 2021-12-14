@@ -79,7 +79,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>VideoLibrary.mdf</DependentUpon>
     </Content>
-    <Content Include="Scripts\Task2\CreateFunctions.sql" />
     <Content Include="Scripts\Task2\CreateTables.sql" />
     <Content Include="Scripts\Task2\CreateViews.sql" />
     <Content Include="Scripts\Task2\FillTables.sql" />
