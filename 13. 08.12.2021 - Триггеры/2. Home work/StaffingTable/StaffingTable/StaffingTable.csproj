@@ -86,7 +86,7 @@
     <Content Include="Scripts\CreateProcUtils.sql" />
     <Content Include="Scripts\CreateViews.sql" />
     <Content Include="Scripts\CreateTables.sql" />
-    <Content Include="Scripts\CreateTriggers.sql" />
+    <Content Include="Scripts\QueriesTriggers.sql" />
     <Content Include="Scripts\Queries.sql" />
     <Content Include="Scripts\FillTables.sql" />
   </ItemGroup>

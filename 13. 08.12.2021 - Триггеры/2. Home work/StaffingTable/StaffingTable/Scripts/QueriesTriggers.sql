@@ -53,7 +53,7 @@ create trigger onUpdateDistributionUnits on DistributionUnits
 	as
 	begin
 		-- вывод сообщения
-		raiserror(N'onUpdateDistributionUnits: Количество измененных строк в таблице DistributionUnits: %d', 0, 1, @@rowcount);
+		raiserror(N'    onUpdateDistributionUnits: Количество измененных строк в таблице DistributionUnits: %d', 0, 1, @@rowcount);
 	end
 go
 
@@ -77,7 +77,7 @@ create trigger onDeleteDistributionUnits on DistributionUnits
 	as
 	begin
 		-- вывод сообщения
-		raiserror(N'onDeleteDistributionUnits: Количество измененных строк в таблице DistributionUnits: %d', 0, 1, @@rowcount);
+		raiserror(N'    onDeleteDistributionUnits: Количество измененных строк в таблице DistributionUnits: %d', 0, 1, @@rowcount);
 	end;
 go
 
@@ -109,7 +109,7 @@ create trigger onUpdateUnits on Units
 		
 		if @flag = 1 begin
 			-- вывод сообщения
-			raiserror (N'onUpdateUnits: Нельзя изменять запись "Инженер-электрик"!', 0, 1);
+			raiserror (N'    onUpdateUnits: Нельзя изменять запись "Инженер-электрик"!', 0, 1);
 
 			-- отмена транзакции
 			rollback tran;
