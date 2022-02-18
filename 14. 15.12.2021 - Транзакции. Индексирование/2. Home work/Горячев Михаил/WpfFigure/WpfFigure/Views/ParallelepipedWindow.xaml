@@ -1,0 +1,270 @@
+﻿<Window x:Class="WpfFigure.Views.ParallelepipedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFigure.Views"
+        mc:Ignorable="d"
+        Title="Прямоугольный параллелепипед" SizeToContent="WidthAndHeight"
+        FontFamily="Verdana"
+        FontSize="14"
+        Background="DimGray"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        Icon="../Images/logo.png">
+    <Grid>
+        <!-- Создание строк -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="320"/>
+            <RowDefinition Height="180"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Созадание столбцов -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!--#region Ввод данных -->
+        <GroupBox Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.RowSpan="2"
+                  Header="Ввод данных"
+                  Foreground="White"
+                  Margin="10" 
+                  BorderBrush="White">
+
+            <StackPanel>
+
+                <!-- Сторона A-->
+                <Label Content="Сторона A"
+                       Height="40"
+                       Margin="5 10 5 0"
+                       Background="DarkGray"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxSideA"
+                         Height="30"
+                         Margin="5 0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         TextChanged="TextBox_TextChanged"
+                         KeyDown="TextBox_KeyDown"
+                         Text="0"/>
+
+                <!-- Сторона B -->
+                <Label Content="Сторона B"
+                       Height="40"
+                       Margin="5 20 5 0"
+                       Background="DarkGray"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxSideB"
+                         Height="30"
+                         Margin="5 0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         TextChanged="TextBox_TextChanged"
+                         KeyDown="TextBox_KeyDown"
+                         Text="0"/>
+
+                <!-- Сторона C -->
+                <Label Content="Сторона C"
+                       Height="40"
+                       Margin="5 20 5 0"
+                       Background="DarkGray"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxSideC"
+                         Height="30"
+                         Margin="5 0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         TextChanged="TextBox_TextChanged"
+                         KeyDown="TextBox_KeyDown"
+                         Text="0"/>
+
+                <!-- Плотность -->
+                <Label Content="Плотность"
+                       Height="40"
+                       Margin="5 20 5 0"
+                       Background="DarkGray"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxDensity"
+                         Height="30"
+                         Margin="5 0"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         TextChanged="TextBox_TextChanged"
+                         KeyDown="TextBox_KeyDown"
+                         Text="0"/>
+
+            </StackPanel>
+        </GroupBox>
+        <!--#endregion-->
+
+
+        <!--#region Результат -->
+        <GroupBox Grid.Row="0" 
+                  Grid.Column="1"
+                  Header="Реузльтат"
+                  Foreground="White"
+                  Margin="10">
+
+            <StackPanel>
+                <!-- Площадь -->
+                <Label Content="Площадь"
+                       Height="40"
+                       Margin="5 10 5 0"
+                       Background="CornflowerBlue"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxArea"
+                         Height="30"
+                         Margin="5 0"
+                         Background="LightGray"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         IsReadOnly="True"
+                         IsTabStop="False"
+                         Text="────────────"/>
+
+                <!-- Объём -->
+                <Label Content="Объём"
+                       Height="40"
+                       Margin="5 20 5 0"
+                       Background="CornflowerBlue"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxVolume"
+                         Height="30"
+                         Margin="5 0"
+                         Background="LightGray"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         IsReadOnly="True"
+                         IsTabStop="False"
+                         Text="────────────"/>
+
+                <!-- Масса -->
+                <Label Content="Масса"
+                       Height="40"
+                       Margin="5 20 5 0"
+                       Background="CornflowerBlue"
+                       Foreground="White"
+                       VerticalContentAlignment="Center"
+                       HorizontalContentAlignment="Center"/>
+                <TextBox Name="TbxMass"
+                         Height="30"
+                         Margin="5 0"
+                         Background="LightGray"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Center"
+                         IsReadOnly="True"
+                         IsTabStop="False"
+                         Text="────────────"/>
+
+            </StackPanel>
+
+        </GroupBox>
+
+
+        <!--#endregion-->
+
+
+        <!--#region Изображение фигуры -->
+        <GroupBox Grid.Row="0" 
+                  Grid.Column="2"
+                  Header="Фигура"
+                  Foreground="White"
+                  Margin="10">
+
+            <!-- Изображение -->
+            <Image Source="../Images/parallelepiped.png"
+                   Stretch="None"/>
+
+        </GroupBox>
+        <!--#endregion-->
+
+
+        <!--#region Параметры вычисления -->
+        <GroupBox Grid.Row="1"
+                  Grid.Column="1"
+                  Header="Параметры вычисления"
+                  Foreground="White"
+                  Margin="10">
+
+            <StackPanel Orientation="Vertical">
+
+                <!-- Площадь -->
+                <CheckBox Name="CkbArea"
+                          Content="Площадь"
+                          Foreground="White"
+                          Margin="10 20 10 10"
+                          IsChecked="True"
+                          Click="CheckBox_Click"/>
+
+                <!-- Объём -->
+                <CheckBox Name="CkbVolume"
+                          Content="Объём"
+                          Foreground="White"
+                          IsChecked="True"
+                          Margin="10"
+                          Click="CheckBox_Click"/>
+
+                <!-- Масса -->
+                <CheckBox Name="CkbMass"
+                          Content="Масса"
+                          Foreground="White"
+                          IsChecked="True"
+                          Margin="10"
+                          Click="CheckBox_Click"/>
+
+            </StackPanel>
+        </GroupBox>
+        <!--#endregion-->
+
+
+        <!--#region Кнопки управления -->
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="1"
+                    Grid.Column="2">
+            <!-- Кнопка вычисления -->
+            <Button Name="BtnResult"
+                    Height="40"
+                    Width="200"
+                    Margin="0 40 0 10"
+                    Background="#FF2766AD"
+                    Foreground="White"
+                    Content="Вычислить"
+                    BorderThickness="3"
+                    BorderBrush="CornflowerBlue"
+                    Click="BtnResult_Click"/>
+
+            <!-- Кнопка выхода -->
+            <Button Height="40"
+                    Width="200"
+                    Margin="0 5"
+                    Background="#FFD24949"
+                    Foreground="White"
+                    Content="Выход"                    
+                    BorderThickness="3"
+                    BorderBrush="RosyBrown"
+                    Click="Exit_Click"/>
+
+        </StackPanel>
+        <!--#endregion-->
+
+    </Grid>
+</Window>
